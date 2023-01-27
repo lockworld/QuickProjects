@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallAPI", "CallAPI\CallAPI.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCWebApp", "MVCWebApp\MVCWebApp.csproj", "{9AFBC3FE-5551-4A91-8D86-FA553434A12F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQLITE", "SQLITE", "{416F1B6B-0D44-4563-86C4-B616D8EBB120}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sqlite.Core.TestApp", "Sqlite\Sqlite.Core.TestApp\Sqlite.Core.TestApp.csproj", "{7F82CEF0-5EC4-4FB3-A713-0060D9DCB41E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +31,16 @@ Global
 		{9AFBC3FE-5551-4A91-8D86-FA553434A12F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AFBC3FE-5551-4A91-8D86-FA553434A12F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AFBC3FE-5551-4A91-8D86-FA553434A12F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F82CEF0-5EC4-4FB3-A713-0060D9DCB41E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F82CEF0-5EC4-4FB3-A713-0060D9DCB41E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F82CEF0-5EC4-4FB3-A713-0060D9DCB41E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F82CEF0-5EC4-4FB3-A713-0060D9DCB41E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7F82CEF0-5EC4-4FB3-A713-0060D9DCB41E} = {416F1B6B-0D44-4563-86C4-B616D8EBB120}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3D7B3D48-F792-4F86-AB9F-C2981F44C9A3}

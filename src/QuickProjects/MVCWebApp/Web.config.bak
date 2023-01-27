@@ -1,38 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
   For more information on how to configure your ASP.NET application, please visit
   https://go.microsoft.com/fwlink/?LinkId=301880
   -->
 <configuration>
-  <configSections>
-    <section name="secureAppSettings" type="System.Configuration.NameValueSectionHandler, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  </configSections>
   <appSettings>
     <add key="webpages:Version" value="3.0.0.0"/>
     <add key="webpages:Enabled" value="false"/>
     <add key="ClientValidationEnabled" value="true"/>
     <add key="UnobtrusiveJavaScriptEnabled" value="true"/>
   </appSettings>
-  <secureAppSettings configProtectionProvider="RsaProtectedConfigurationProvider">
-    <EncryptedData Type="http://www.w3.org/2001/04/xmlenc#Element"
-      xmlns="http://www.w3.org/2001/04/xmlenc#">
-      <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" />
-      <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
-        <EncryptedKey xmlns="http://www.w3.org/2001/04/xmlenc#">
-          <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p" />
-          <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
-            <KeyName>Rsa Key</KeyName>
-          </KeyInfo>
-          <CipherData>
-            <CipherValue>TXQibgiAWnd6YPIiNY8IsQc8/xzHyCFcYWvxpMsh3cK+LVyHMe6L0go7a7tZozAPH3pxlvDO7SauMzqw6cy9siwK0VwqEq5+Ba4xnSyXBNKm6M9LMxD23vC6G0Dp5XR99oAy/CHMA5aQ3acCzs1a27bATGWgB4424TmfegiJT5aUmFklgW91O2hnsFGtHNXhOcsfTewBtfOO+DmFp0piG+69dv8Rd+cq+uilKp5Uq/J6WXlnwGlyWbWgtKBovMTalrXV5/wj5ci5quz+CKS0/y47ZOJRBJyAr39IN3EKPWOlUEyOACYZQUX9MK01ehpV36CmjlY5J+Rp0g1FzOwVtQ==</CipherValue>
-          </CipherData>
-        </EncryptedKey>
-      </KeyInfo>
-      <CipherData>
-        <CipherValue>V8CsKm5H8vF6SAOUPYjdIjtDdeArOPMYnv6ZBvhBBw2O0+L9sOAS+cMXnSJJXi9k7WOUz6gWa52fkJHBRLXwz6ODVz9oKELTGdFZmrIvdS/P/PhjSITsfUGSHMWulFmCija8WLClF/Wdq3o70Qobjw==</CipherValue>
-      </CipherData>
-    </EncryptedData>
-  </secureAppSettings>
   <system.web>
     <compilation debug="true" targetFramework="4.5"/>
     <httpRuntime targetFramework="4.5"/>
